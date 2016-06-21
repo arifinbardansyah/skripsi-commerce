@@ -1,0 +1,21 @@
+{
+  "name": "scriptsweat-rest",
+  "version": "1.0.0",
+  "description": "rest-server",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/scriptsweat-rest.git"
+  },
+  "author": "Henra Setia Nugraha",
+  "license": "MIT"
+}
