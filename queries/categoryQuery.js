@@ -1,5 +1,4 @@
 var categoryModel = require('../models/categoryModel');
-var productModel = require('../models/productModel');
 
 // get all data from user data
 var getAllData = function(err, res) {

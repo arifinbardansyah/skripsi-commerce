@@ -18,4 +18,5 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use('/api', routes.categoryRoute);
+app.use('/api', routes.productRoute);
 app.listen(port);
