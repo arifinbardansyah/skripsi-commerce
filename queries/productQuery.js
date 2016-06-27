@@ -16,6 +16,7 @@ var getAllData = function(err, res) {
 var getProduct = function(req, res) {
   productModel.find({
     category: req.params.category
+    console.log(req.params.category);
   }, function(err, data) {
     if (err) {
       res.send(err);
