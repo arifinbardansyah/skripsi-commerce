@@ -11,6 +11,7 @@ var port = process.env.PORT || 3000;
 var router = express.Router();
 
 var categoryModel = require('./models/categoryModel');
+var productModel = require('./models/productModel');
 
 app.use(bodyParser.urlencoded({
   extended: true
