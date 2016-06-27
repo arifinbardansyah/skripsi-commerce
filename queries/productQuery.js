@@ -14,9 +14,10 @@ var getAllData = function(err, res) {
 
 // get one data from user data by id
 var getProduct = function(req, res) {
+    console.log(req.params.category);
+  
   productModel.find({
     category: req.params.category
-    console.log(req.params.category);
   }, function(err, data) {
     if (err) {
       res.send(err);
