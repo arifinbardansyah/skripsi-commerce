@@ -15,17 +15,17 @@ var getAllData = function(err, res) {
 
 
 // get one data from user data by id
-var getProduct = function(req, res) {
-  categoryModel.find({
-    category: req.params.category
-  }, function(err, data) {
-    if (err) {
-      res.send(err);
-    }
+// var getProduct = function(req, res) {
+//   categoryModel.find({
+//     category: req.params.category
+//   }, function(err, data) {
+//     if (err) {
+//       res.send(err);
+//     }
 
-    res.json(data);
-  })
-}
+//     res.json(data);
+//   })
+// }
 
 module.exports.getAllData = getAllData;
-module.exports.getProduct = getOne;
+// module.exports.getProduct = getProduct;
