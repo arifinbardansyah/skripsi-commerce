@@ -6,9 +6,9 @@ var categoryRoute = express.Router();
 
 categoryRoute.route('/category/')
   .get(queries.getAllData)
-  .post(queries.getProduct);
 
 categoryRoute.route('/product/')
   .get(query.getAllData);
+  .post(quey.getProduct);
 
 module.exports.categoryRoute = categoryRoute;
