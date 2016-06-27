@@ -5,8 +5,6 @@ var categoryRoute = express.Router();
 
 categoryRoute.route('/')
   .get(queries.getAllData)
-
-categoryRoute.route('/:category')
   .post(queries.getProduct);
 
 module.exports.categoryRoute = categoryRoute;
