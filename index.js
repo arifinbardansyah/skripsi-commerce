@@ -1,7 +1,8 @@
 var express = require('express'),
   mongoose = require('mongoose'),
   bodyParser = require('body-parser'),
-  routes = require('./routes/categoryRoute');
+  routesCategory = require('./routes/categoryRoute');
+  routesProduct = require('./routes/productRoute');
 
 // mongoose.connect('mongodb://localhost:27017/commerce');
 // mongoose.connect('mongodb://restapi:henra12@ds011933.mlab.com:11933/dbrest');
@@ -17,6 +18,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
-app.use('/api', routes.categoryRoute);
-app.use('/api', routes.productRoute);
+app.use('/api/category', routesCategory.categoryRoute);
+app.use('/api/product', routesProduct.productRoute);
 app.listen(port);

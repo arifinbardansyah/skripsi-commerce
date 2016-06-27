@@ -3,7 +3,7 @@ var queries = require('../queries/categoryQuery');
 
 var categoryRoute = express.Router();
 
-categoryRoute.route('/category/')
+categoryRoute.route('/')
   .get(queries.getAllData)
 
 module.exports.categoryRoute = categoryRoute;
