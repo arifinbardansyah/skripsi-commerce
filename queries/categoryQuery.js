@@ -12,6 +12,12 @@ var getCategory = function(err, res) {
 }
 
 var getSubCategory = function(req, res) {
+
+  console.log("req body:");
+  console.log(req.body.category);
+  console.log("req params:");
+  console.log(req.params.category);
+
   categoryModel.find({
     category: req.params.category
   }, function(err, data) {
