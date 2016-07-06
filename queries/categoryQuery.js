@@ -19,7 +19,7 @@ var getSubCategory = function(req, res) {
   console.log(req.params.category);
 
   categoryModel.find({
-    category: req.params.category
+    category: req.body.category
   }, function(err, data) {
     if (err) {
       res.send(err);
