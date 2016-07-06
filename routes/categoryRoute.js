@@ -7,6 +7,6 @@ categoryRoute.route('/')
   .get(queries.getCategory)
 
  categoryRoute.route('/:category')
-  .get(queries.getSubCategory)
+  .post(queries.getSubCategory)
 
 module.exports.categoryRoute = categoryRoute;
