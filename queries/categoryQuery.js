@@ -1,3 +1,4 @@
+var Schema=mongoose.Schema;
 var categoryModel = mongoose.model('category',new Schema());
 
 // get all data from user data
