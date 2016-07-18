@@ -6,4 +6,4 @@ var category = new mongoose.Schema({
   subcategory: [String]
 });
 
-module.exports = mongoose.model('category', category, 'category');
+// module.exports = mongoose.model('category', category, 'category');
