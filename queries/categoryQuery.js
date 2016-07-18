@@ -1,5 +1,6 @@
+var mongoose=require("mongoose");
 var Schema=mongoose.Schema;
-var categoryModel = mongoose.model('category',new Schema());
+var categoryModel = mongoose.model('category',new Schema(),'category');
 
 // get all data from user data
 var getCategory = function(err, res) {
