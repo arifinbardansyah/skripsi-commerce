@@ -4,7 +4,7 @@ var queries = require('../queries/subcategoryQuery');
 var subcategoryRoute = express.Router();
 
 subcategoryRoute.route('/')
-  // .get(queries.getAllData)
+  .get(queries.getAllData)
   .post(queries.getSubcategory);
 
 module.exports.subcategoryRoute = subcategoryRoute;
