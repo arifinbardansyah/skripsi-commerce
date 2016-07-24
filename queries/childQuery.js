@@ -4,7 +4,7 @@ var getChild = function(req, res) {
     console.log("req :");
     console.log(req.body.tipe);
 
-  productModel.find({
+  childModel.find({
     tipe: req.body.tipe
   }, function(err, data) {
     if (err) {
