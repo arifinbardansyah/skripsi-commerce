@@ -6,9 +6,9 @@ var express = require('express'),
   // routesSubcategory = require('./routes/subcategoryRoute');
   // routesChild = require('./routes/childRoute');
 
-mongoose.connect('mongodb://localhost:27017/commerce');
+// mongoose.connect('mongodb://localhost:27017/commerce');
 // mongoose.connect('mongodb://restapi:henra12@ds011933.mlab.com:11933/dbrest');
-// mongoose.connect('mongodb://commerce:arifin@ds021034.mlab.com:21034/dbcommerce');
+mongoose.connect('mongodb://commerce:arifin@ds021034.mlab.com:21034/dbcommerce');
 var app = express();
 var port = process.env.PORT || 3000;
 var router = express.Router();
