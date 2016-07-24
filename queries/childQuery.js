@@ -1,7 +1,7 @@
 var childModel = require('../models/childModel');
 
 var getAllData = function(err, res) {
-  subcategoryModel.find(function(err, data) {
+  childModel.find(function(err, data) {
     if (err) {
       res.send(err);
     }
