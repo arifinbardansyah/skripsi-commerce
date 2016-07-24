@@ -4,7 +4,7 @@ var getSubcategory = function(req, res) {
     console.log("req :");
     console.log(req.body.category);
 
-  productModel.find({
+  subcategoryModel.find({
     category: req.body.category
   }, function(err, data) {
     if (err) {
