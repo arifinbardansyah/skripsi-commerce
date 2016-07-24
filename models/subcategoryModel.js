@@ -1,9 +1,9 @@
-// var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
-// var subcategory = new mongoose.Schema({
-//   _id: Number,
-//   category: String,
-//   subcategory: [String]
-// });
+var subcategory = new mongoose.Schema({
+  _id: Number,
+  category: String,
+  subcategory: [String]
+});
 
-// module.exports = mongoose.model('subcategory', subcategory, 'subcategory');
+module.exports = mongoose.model('subcategory', subcategory, 'subcategory');
