@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var child = new mongoose.Schema({
-  _id: Number,
+  // _id: Number,
   subcategory: String,
   child: String
 });
