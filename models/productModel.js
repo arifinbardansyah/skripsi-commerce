@@ -3,8 +3,8 @@ var mongoose = require('mongoose');
 var product = new mongoose.Schema({
   _id: String,
   product: String,
-  category: [String],
-  image: [String],
+  category: String,
+  image: String,
   brand: String,
   rating: Number,
   jumlah_review:Number,
